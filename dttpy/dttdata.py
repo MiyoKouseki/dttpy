@@ -134,6 +134,6 @@ class DttData():
         f,CSD_AB,deg = self.getCSD(chnameA,chnameB)
         f,ASD_A = self.getASD(chnameA)
         f,ASD_B = self.getASD(chnameB)
-        mag = CSD_AB/(ASD_B*ASD_B)
+        mag = CSD_AB/(ASD_A*ASD_A)
         return f,mag,deg    
 
